@@ -1,0 +1,68 @@
+{
+    "id": "plugin.com.omegaduncan.cohere",
+    "plugin_type": "translate",
+    "homepage": "https://github.com/omegaduncan/pot-app-translate-plugin-cohere",
+    "display": "Cohere",
+    "icon": "cohere.svg",
+    "needs": [
+        {
+            "key": "description",
+            "display": "Plugin Description / 插件說明\n\n[System/User Prompt]\nSupported variables / 支持變數：\n- $text: Text to be translated / 待翻譯文字\n- $from: Source language / 來源語言\n- $to: Target language / 目標語言\n- $detect: Detected language / 偵測到的語言\n\n[Parameters]",
+            "type": "input",
+            "readonly": true
+        },
+        {
+            "key": "api_key",
+            "display": "API Key",
+            "type": "input"
+        },
+        {
+            "key": "model",
+            "display": "Model (default: command-r-plus-08-2024)",
+            "type": "input"
+        },
+        {
+            "key": "system_prompt",
+            "display": "System Prompt",
+            "type": "input"
+        },
+        {
+            "key": "user_prompt",
+            "display": "User Prompt",
+            "type": "input"
+        },
+        {
+            "key": "parameters",
+            "display": "Parameters (default: {\"temperature\": 0.1})",
+            "type": "input"
+        },
+        {
+            "key": "use_stream",
+            "display": "啟用流式輸出 / Enable streaming",
+            "type": "select",
+            "options": {
+                "true": "是 / Yes",
+                "false": "否 / No"
+            }
+        }
+    ],
+    "language": {
+        "auto": "auto",
+        "zh_cn": "zh",
+        "zh_tw": "zh",
+        "en": "en",
+        "ja": "ja",
+        "ko": "ko",
+        "fr": "fr",
+        "es": "es",
+        "ru": "ru",
+        "de": "de",
+        "it": "it",
+        "pt": "pt",
+        "nl": "nl",
+        "pl": "pl",
+        "th": "th",
+        "vi": "vi",
+        "ar": "ar"
+    }
+} 
